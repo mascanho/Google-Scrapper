@@ -35,7 +35,7 @@ impl SERP {
         );
 
         let mut headers = HeaderMap::new();
-        headers.insert("User-Agent", HeaderValue::from_static("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36"));
+        headers.insert("User-Agent", HeaderValue::from_static("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.97 Safari/537.36"));
 
         let response = client.get(&url).headers(headers).send()?;
 
@@ -107,7 +107,7 @@ impl SERP {
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let keyword = "supply chain management";
+    let keyword = "supply chain jobs";
     let language = "en";
     let country = "uk";
     let heading_tags = vec!["h1", "h2", "h3", "h4", "h5", "h6"];
